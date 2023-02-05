@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CircleImage: View {
     var body: some View {
-        Image("turtlerock") // 이미지를
+        Image("dog") // 이미지를
+            .frame(width: 500, height: 500)
             .clipShape(Circle()) // 원형으로
     }
 }
