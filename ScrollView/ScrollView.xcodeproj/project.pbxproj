@@ -13,6 +13,7 @@
 		BE51DE78299BDF0C00374EF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE51DE77299BDF0C00374EF5 /* Preview Assets.xcassets */; };
 		BE51DE7F299BDFDE00374EF5 /* Vertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DE7E299BDFDE00374EF5 /* Vertical.swift */; };
 		BE51DE81299BE03900374EF5 /* Horizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DE80299BE03900374EF5 /* Horizontal.swift */; };
+		BE51DE83299BE09900374EF5 /* ScrollViewInScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DE82299BE09900374EF5 /* ScrollViewInScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BE51DE77299BDF0C00374EF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE51DE7E299BDFDE00374EF5 /* Vertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertical.swift; sourceTree = "<group>"; };
 		BE51DE80299BE03900374EF5 /* Horizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horizontal.swift; sourceTree = "<group>"; };
+		BE51DE82299BE09900374EF5 /* ScrollViewInScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewInScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				BE51DE72299BDF0A00374EF5 /* ContentView.swift */,
 				BE51DE7E299BDFDE00374EF5 /* Vertical.swift */,
 				BE51DE80299BE03900374EF5 /* Horizontal.swift */,
+				BE51DE82299BE09900374EF5 /* ScrollViewInScrollView.swift */,
 				BE51DE74299BDF0C00374EF5 /* Assets.xcassets */,
 				BE51DE76299BDF0C00374EF5 /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE51DE73299BDF0A00374EF5 /* ContentView.swift in Sources */,
+				BE51DE83299BE09900374EF5 /* ScrollViewInScrollView.swift in Sources */,
 				BE51DE81299BE03900374EF5 /* Horizontal.swift in Sources */,
 				BE51DE7F299BDFDE00374EF5 /* Vertical.swift in Sources */,
 				BE51DE71299BDF0A00374EF5 /* ScrollViewApp.swift in Sources */,
