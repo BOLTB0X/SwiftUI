@@ -11,7 +11,11 @@
 		BE51DE93299E73B400374EF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DE92299E73B400374EF5 /* ContentView.swift */; };
 		BE51DE95299E73B700374EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE51DE94299E73B700374EF5 /* Assets.xcassets */; };
 		BE51DE98299E73B800374EF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE51DE97299E73B800374EF5 /* Preview Assets.xcassets */; };
-		BE51DE9F299E742B00374EF5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DE9E299E742B00374EF5 /* CameraView.swift */; };
+		BE51DEA1299FBEEF00374EF5 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DEA0299FBEEF00374EF5 /* CameraManager.swift */; };
+		BE51DEA3299FBF3C00374EF5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DEA2299FBF3C00374EF5 /* ContentViewModel.swift */; };
+		BE51DEA5299FBF7400374EF5 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DEA4299FBF7400374EF5 /* FrameManager.swift */; };
+		BE51DEA7299FBF9500374EF5 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DEA6299FBF9500374EF5 /* FrameView.swift */; };
+		BE51DEA9299FBFD600374EF5 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DEA8299FBFD600374EF5 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +24,11 @@
 		BE51DE92299E73B400374EF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE51DE94299E73B700374EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE51DE97299E73B800374EF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BE51DE9E299E742B00374EF5 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		BE51DEA0299FBEEF00374EF5 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		BE51DEA2299FBF3C00374EF5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		BE51DEA4299FBF7400374EF5 /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		BE51DEA6299FBF9500374EF5 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		BE51DEA8299FBFD600374EF5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				BE51DE90299E73B400374EF5 /* PracticeAVFoundationApp.swift */,
-				BE51DE92299E73B400374EF5 /* ContentView.swift */,
-				BE51DE9E299E742B00374EF5 /* CameraView.swift */,
+				BE51DEAC299FC03D00374EF5 /* Models */,
+				BE51DEAA299FC00000374EF5 /* Views */,
+				BE51DEAB299FC01400374EF5 /* ViewModels */,
 				BE51DE94299E73B700374EF5 /* Assets.xcassets */,
 				BE51DE96299E73B800374EF5 /* Preview Content */,
 			);
@@ -68,6 +77,33 @@
 				BE51DE97299E73B800374EF5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE51DEAA299FC00000374EF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE51DE92299E73B400374EF5 /* ContentView.swift */,
+				BE51DEA6299FBF9500374EF5 /* FrameView.swift */,
+				BE51DEA8299FBFD600374EF5 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE51DEAB299FC01400374EF5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BE51DEA2299FBF3C00374EF5 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BE51DEAC299FC03D00374EF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE51DEA4299FBF7400374EF5 /* FrameManager.swift */,
+				BE51DEA0299FBEEF00374EF5 /* CameraManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE51DE9F299E742B00374EF5 /* CameraView.swift in Sources */,
+				BE51DEA5299FBF7400374EF5 /* FrameManager.swift in Sources */,
 				BE51DE93299E73B400374EF5 /* ContentView.swift in Sources */,
+				BE51DEA1299FBEEF00374EF5 /* CameraManager.swift in Sources */,
 				BE51DE91299E73B400374EF5 /* PracticeAVFoundationApp.swift in Sources */,
+				BE51DEA7299FBF9500374EF5 /* FrameView.swift in Sources */,
+				BE51DEA3299FBF3C00374EF5 /* ContentViewModel.swift in Sources */,
+				BE51DEA9299FBFD600374EF5 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
