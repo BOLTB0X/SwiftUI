@@ -26,7 +26,7 @@ struct ContentView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 50)
             .cornerRadius(16)
-            .foregroundColor(.white)
+            .foregroundColor(.black)
                 .padding(.horizontal, 20)
                 .onTapGesture {
                    showSheet = true
