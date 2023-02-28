@@ -18,8 +18,15 @@ struct CardView: View {
             Spacer()
             HStack {
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
+                // 스크럼의 제목을 표시하는 텍스트 보기에 AccessibilityAddTraits(.isHeader) 수정자를 적용
+                // 이 수정자는 스크럼 제목과 "제목"을 읽어 보기의 정보 아키텍처를 전달
+                // 접근성 수정자를 사용하여 HStack의 첫 번째 레이블 내용을 설명하는 레이블을 추가
+                // HStack의 두 번째 레이블에 유사한 접근성 수정자를 추가
+                    .accessibilityLabel("\(scrum.attendees.count) attendees")
+
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
+                    .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
                     .labelStyle(.trailingIcon)
 
                 // .leading, .top 및 .bottom 가장자리에 안쪽 여백을 추가 가능
