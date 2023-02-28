@@ -20,8 +20,11 @@ struct CardView: View {
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
+                    .labelStyle(.trailingIcon)
+
                 // .leading, .top 및 .bottom 가장자리에 안쪽 여백을 추가 가능
                     .padding(.trailing, 20)
+                
             }
             .font(.caption)
         }

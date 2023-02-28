@@ -14,6 +14,7 @@
 		BE9B378C29AB972800AD1FAC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B378B29AB972800AD1FAC /* Theme.swift */; };
 		BE9B378E29AB98B700AD1FAC /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B378D29AB98B700AD1FAC /* DailyScrum.swift */; };
 		BE9B379029ACD3FD00AD1FAC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B378F29ACD3FD00AD1FAC /* CardView.swift */; };
+		BE9B379829AE561E00AD1FAC /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B379729AE561E00AD1FAC /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BE9B378B29AB972800AD1FAC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		BE9B378D29AB98B700AD1FAC /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		BE9B378F29ACD3FD00AD1FAC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BE9B379729AE561E00AD1FAC /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				BE9B378B29AB972800AD1FAC /* Theme.swift */,
 				BE9B378D29AB98B700AD1FAC /* DailyScrum.swift */,
+				BE9B379729AE561E00AD1FAC /* TrailingIconLabelStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9B378E29AB98B700AD1FAC /* DailyScrum.swift in Sources */,
+				BE9B379829AE561E00AD1FAC /* TrailingIconLabelStyle.swift in Sources */,
 				BE9B378C29AB972800AD1FAC /* Theme.swift in Sources */,
 				7CB413E126EA824100544BA7 /* MeetingView.swift in Sources */,
 				7CB413DF26EA824100544BA7 /* ScrumdingerApp.swift in Sources */,
