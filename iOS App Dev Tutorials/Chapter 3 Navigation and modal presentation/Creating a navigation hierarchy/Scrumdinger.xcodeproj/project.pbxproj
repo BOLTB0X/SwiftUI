@@ -19,6 +19,7 @@
 		AA0F3C4D27208C4700945F09 /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C4927208C4700945F09 /* SampleCode.xcconfig */; };
 		AA0F3C4E27208C4700945F09 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C4B27208C4700945F09 /* LICENSE.txt */; };
 		AA0F3C4F27208C4700945F09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C4C27208C4700945F09 /* README.md */; };
+		BEA0FFEC29AF880400E23E0A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0FFEB29AF880400E23E0A /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AA0F3C4927208C4700945F09 /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		AA0F3C4B27208C4700945F09 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		AA0F3C4C27208C4700945F09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEA0FFEB29AF880400E23E0A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				7CB413DE26EA824100544BA7 /* ScrumdingerApp.swift */,
 				7CB413F426EAC55200544BA7 /* CardView.swift */,
 				7CB413E026EA824100544BA7 /* MeetingView.swift */,
+				BEA0FFEB29AF880400E23E0A /* DetailView.swift */,
 				7CB413F826EB9A1A00544BA7 /* ScrumsView.swift */,
 				7CB413F626EAC76E00544BA7 /* TrailingIconLabelStyle.swift */,
 				7CB413E226EA824300544BA7 /* Assets.xcassets */,
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB413F326EABF1D00544BA7 /* DailyScrum.swift in Sources */,
+				BEA0FFEC29AF880400E23E0A /* DetailView.swift in Sources */,
 				7CB413F726EAC76E00544BA7 /* TrailingIconLabelStyle.swift in Sources */,
 				7CB413F126EA97C500544BA7 /* Theme.swift in Sources */,
 				7CB413F926EB9A1A00544BA7 /* ScrumsView.swift in Sources */,
