@@ -33,8 +33,13 @@ struct DetailEditView: View {
                     Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {
                         Text("Length")
                     }
+                    .accessibilityValue("\(Int(data.lengthInMinutes)) minutes")
+
                     Spacer()
                     Text("\(Int(data.lengthInMinutes)) minutes")
+                    // VoiceOver에서 텍스트 보기를 숨김
+                    // VoiceOver에 필요한 모든 정보는 슬라이더의 접근성 값
+                        .accessibilityHidden(true)
                 }
             }
             Section(header: Text("Attendees")) {
@@ -50,7 +55,23 @@ struct DetailEditView: View {
                 // 바인딩은 newAttendeeName을 텍스트 필드의 내용과 동기화 상태로 유지
                 // 원본 DailyScrum 모델 데이터에는 영향 X
                 HStack {
+                    // 애니메이션 블록 내에서 newAttendeeName을 빈 문자열로 설정
+                    // 텍스트 필드에는 newAttendeeName에 대한 바인딩이 있으므로 값을 빈 문자열로 설정하면 텍스트 필드의 내용도 지워짐
                     TextField("New Attendee", text: $newAttendeeName)
+                    Button(action: {
+                        withAnimation {
+                            let attendee = DailyScrum.Attendee(name: newAttendeeName)
+                            data.attendees.append(attendee)
+                            newAttendeeName = ""
+
+                        }
+                    }) {
+                        Image(systemName: "plus.circle.fill")
+                            .accessibilityLabel("Add attendee")
+
+                    }
+                    .disabled(newAttendeeName.isEmpty)
+
                 }
             }
         }
