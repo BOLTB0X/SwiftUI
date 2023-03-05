@@ -5,8 +5,9 @@ See LICENSE folder for this sample’s licensing information.
 import SwiftUI
 
 struct DetailEditView: View {
-    
-    @State private var data = DailyScrum.Data()
+    // DetailEditView.swift에서 데이터 속성을 상태에서 바인딩으로 변환
+    // data는 이제 초기화 매개변수이므로 개인 속성과 DailyScrum.Data 초기화를 제거해야 함
+    @Binding var data: DailyScrum.Data
     @State private var newAttendeeName = ""
     
     var body: some View {
@@ -54,6 +55,7 @@ struct DetailEditView: View {
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailEditView()
+        DetailEditView(data: .constant(DailyScrum.sampleData[0].data))
+
     }
 }
