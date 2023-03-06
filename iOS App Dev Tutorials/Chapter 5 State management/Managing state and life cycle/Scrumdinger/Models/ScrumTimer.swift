@@ -5,6 +5,8 @@ See LICENSE folder for this sample’s licensing information.
 import Foundation
 
 /// Keeps time for a daily scrum meeting. Keep track of the total meeting time, the time for each speaker, and the name of the current speaker.
+/// ScrumTimer 클래스는 회의 상태를 주기적으로 업데이트
+/// 변경되면 타이머는 speakerChangedAction 클로저를 호출하고 @Published 속성을 통해 다른 중요한 상태 변경을 공유
 class ScrumTimer: ObservableObject {
     /// A struct to keep track of meeting attendees during a meeting.
     struct Speaker: Identifiable {

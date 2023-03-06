@@ -12,6 +12,8 @@ struct MeetingHeaderView: View {
     // secondsElapsed 및 secondsRemaining에 대한 속성을 만들고 미리 보기의 이니셜라이저에 새 인수를 전달
     let secondsElapsed: Int
     let secondsRemaining: Int
+    let theme: Theme
+
     
     // secondsElapsed 및 secondsRemaining을 추가하는 totalSeconds라는 프라이빗 계산 속성을 추가
     private var totalSeconds: Int {
@@ -33,7 +35,10 @@ struct MeetingHeaderView: View {
     var body: some View {
         // 최상위 VStack을 생성하고 접근성 수정자를 HStack에서 VStack으로 이동
         VStack {
+            // 시작 프로젝트에 있는 사용자 지정 ScrumProgressViewStyle로 ProgressView를 수정
+            // 사용자 지정 스타일을 사용하여 ProgressView 주위에 검은색 또는 흰색으로 배경 보기를 그려서 보기를 더 시각적으로 강조
             ProgressView(value: progress)
+                .progressViewStyle(ScrumProgressViewStyle(theme: theme))
             HStack {
                 VStack(alignment: .leading) {
                     Text("Seconds Elapsed")
@@ -46,7 +51,12 @@ struct MeetingHeaderView: View {
                 VStack(alignment: .trailing) {
                     Text("Seconds Remaining")
                         .font(.caption)
+                    // "Seconds Remaining" 레이블에 trailingIcon 레이블 스타일을 적용
+                    // 기본 레이블 스타일은 디자인에 대해 잘못된 순서로 이미지와 텍스트를 표시
+                    // 사용자 지정 TrailingIconLabelStyle은 두 보기의 순서를 반대
                     Label("\(secondsRemaining)", systemImage: "hourglass.tophalf.fill")
+                        .labelStyle(.trailingIcon)
+
                 }
             }
         }
@@ -54,13 +64,15 @@ struct MeetingHeaderView: View {
         .accessibilityLabel("Time remaining")
         // .accessibilityValue에서 정적 데이터를 제거하고 텍스트를 업데이트하여 남은 시간을 읽음
         .accessibilityValue("\(minutesRemaining) minutes")
+        // 최상위 VStack의 간격을 조정하기 위해 상단 및 수평 패딩을 추가
+        .padding([.top, .horizontal])
     }
 }
 
 struct MeetingHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         // .previewLayout(.sizeThatFits)으로 미리보기를 수정하여 캔버스에서 하위 보기 크기를 더 정확하게 나타낼 수 있음
-        MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180)
+        MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180, theme: .bubblegum)
             .previewLayout(.sizeThatFits)
     }
 }

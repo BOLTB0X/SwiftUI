@@ -28,6 +28,7 @@
 		AA0F3C6B2720913000945F09 /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C692720913000945F09 /* SampleCode.xcconfig */; };
 		AA0F3C6C2720913000945F09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C6A2720913000945F09 /* README.md */; };
 		BEA0009929B6211100E23E0A /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0009829B6211100E23E0A /* MeetingHeaderView.swift */; };
+		BEA0009B29B627FA00E23E0A /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0009A29B627FA00E23E0A /* MeetingFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		AA0F3C692720913000945F09 /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		AA0F3C6A2720913000945F09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEA0009829B6211100E23E0A /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
+		BEA0009A29B627FA00E23E0A /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				7CB413F426EAC55200544BA7 /* CardView.swift */,
 				7CB413FC26EBD16900544BA7 /* DetailEditView.swift */,
 				7CB413FA26EBAB0B00544BA7 /* DetailView.swift */,
+				BEA0009A29B627FA00E23E0A /* MeetingFooterView.swift */,
 				7CB413E026EA824100544BA7 /* MeetingView.swift */,
 				7CB4140226EBF6B700544BA7 /* ScrumProgressViewStyle.swift */,
 				7CB413F826EB9A1A00544BA7 /* ScrumsView.swift */,
@@ -221,6 +224,7 @@
 				7CB413F326EABF1D00544BA7 /* DailyScrum.swift in Sources */,
 				7CB413FB26EBAB0B00544BA7 /* DetailView.swift in Sources */,
 				7CB413FD26EBD16900544BA7 /* DetailEditView.swift in Sources */,
+				BEA0009B29B627FA00E23E0A /* MeetingFooterView.swift in Sources */,
 				7CB413F726EAC76E00544BA7 /* TrailingIconLabelStyle.swift in Sources */,
 				7CB413F126EA97C500544BA7 /* Theme.swift in Sources */,
 				7CB413F926EB9A1A00544BA7 /* ScrumsView.swift in Sources */,
