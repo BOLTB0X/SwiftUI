@@ -3,6 +3,7 @@ See LICENSE folder for this sample’s licensing information.
 */
 
 import SwiftUI
+import AVFoundation
 
 struct MeetingView: View {
     // scrum binding 변수 추거
@@ -11,6 +12,10 @@ struct MeetingView: View {
     // 프로퍼티를 @StateObject로 감싸는 것은 뷰가 객체에 대한 정보 소스를 소유한다는 것을 의미
     // @StateObject는 ObservableObject인 ScrumTimer를 MeetingView 수명 주기에 연결
     @StateObject var scrumTimer = ScrumTimer()
+    
+    // AVPlayer.sharedDingPlayer를 반환하는 플레이어 속성을 추가
+    // 시작 프로젝트의 Models > AVPlayer+Ding.swift 파일은 ding.wav 리소스를 재생하는 sharedDingPlayer 개체를 정의
+    private var player: AVPlayer { AVPlayer.sharedDingPlayer }
 
     var body: some View {
         ZStack {
@@ -35,6 +40,13 @@ struct MeetingView: View {
         .onAppear {
             scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
             // 타이머가 재설정된 후 새 스크럼 타이머를 시작하려면 scrumTimer.startScrum()을 호출
+            // ScrumTimer는 화자의 시간이 만료되면 이 작업을 호출
+            scrumTimer.speakerChangedAction = {
+                // 닫히면 오디오 파일에서 시간 .0을 찾고 시간 .0을 찾으면 오디오 파일이 항상 처음부터 재생
+                player.seek(to: .zero)
+                player.play()
+
+            }
             scrumTimer.startScrum()
 
         }
