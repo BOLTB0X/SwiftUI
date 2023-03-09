@@ -61,4 +61,27 @@ class ScrumStore: ObservableObject {
             }
         }
     }
+    
+    // 저장 메소드 추가
+    static func save(scrums: [DailyScrum], completion: @escaping (Result<Int, Error>)->Void) {
+        DispatchQueue.global(qos: .background).async {
+            // do-catch 구조
+            do {
+                // do 절에서 스크럼 데이터를 인코딩
+                let data = try JSONEncoder().encode(scrums)
+                let outfile = try fileURL() // 파일 URL에 대한 상수를 만듬
+                try data.write(to: outfile) // 인코딩된 데이터를 파일에 Write
+                
+                // completion handler에 전달
+                DispatchQueue.main.async {
+                    completion(.success(scrums.count))
+                }
+            } catch {
+                // catch 절에서 완료 처리기에 오류를 전달
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
+            }
+        }
+    }
 }
