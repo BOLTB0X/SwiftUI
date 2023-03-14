@@ -1,15 +1,18 @@
 //
-//  StateView.swift
+//  BindingView.swift
 //  PracticePropertyWrapper
 //
-//  Created by KyungHeon Lee on 2023/03/13.
+//  Created by KyungHeon Lee on 2023/03/14.
 //
 
 import SwiftUI
 
-// @State 는 특정 프로퍼티를 뷰의 상태(state)로 만들어준다. 즉 이 프로퍼티가 변경되면 자동으로 뷰의 데이터도 변경되고, 뷰의 데이터를 바꿔도 이 프로퍼티의 데이터도 자동으로 변경
-struct StateView: View {
-    @State private var name = "Hello"
+// @Binding 은 다른 인스턴스 소유의 @State 프로퍼티를 빌려올 때 사용
+// 원래는 상위 view의 @State 뷰로 연결해서 사용
+// 두 값이 양방향 연결이어서 한쪽의 값이 변한다면 다른 한쪽도 변경
+
+struct BindingView: View {
+    @Binding var name: String
     
     var body: some View {
         VStack {
@@ -31,10 +34,11 @@ struct StateView: View {
             name = "Hello"
         }
     }
+
 }
 
-struct StateView_Previews: PreviewProvider {
+struct BindingView_Previews: PreviewProvider {
     static var previews: some View {
-        StateView()
+        BindingView(name: .constant("Hello"))
     }
 }
