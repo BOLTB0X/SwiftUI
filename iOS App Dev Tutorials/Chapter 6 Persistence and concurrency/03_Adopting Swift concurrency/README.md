@@ -5,7 +5,7 @@
 
 ## Simplifying asynchronous code
 
-저저번 챕터에서 추가한 oad(completion:) function
+저저번 챕터에서 추가한 load(completion:) function
 
 ```swift
 static func load(completion: @escaping (Result<[DailyScrum], Error>)->Void) {
@@ -35,8 +35,8 @@ Swift 5.5는 새로운 async/await 패턴을 도입, 다음 챕터에 배울 예
 
 ## Defining an asynchronous function
 
-async 및 await를 사용하여 비동기 함수를 정의하고 호출하는 방법
-<br/>
+async 및 await를 사용하여 비
+<br/>동기 함수를 정의하고 호출하는 방법
 
 ```swift
 class ViewModel: ObservableObject {
