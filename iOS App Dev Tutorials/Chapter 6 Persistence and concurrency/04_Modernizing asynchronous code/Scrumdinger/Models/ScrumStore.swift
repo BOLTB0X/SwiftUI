@@ -44,6 +44,26 @@ class ScrumStore: ObservableObject {
         }
     }
     
+    // Int를 비동기적으로 반환하는 save라는 정적 함수를 만들어야함
+    // 저장 함수는 함수 호출자가 사용할 수 없는 값을 반환
+    // @discardableResult 속성은 사용되지 않은 반환 값에 대한 경고를 비활성화
+    @discardableResult
+    static func save(scrums: [DailyScrum]) async throws -> Int {
+        // await 키워드를 사용하여 withCheckedThrowingContinuation을 호출
+        try await withCheckedThrowingContinuation { continuation in
+            // 클로저에서 완료 핸들러와 함께 레거시 저장 함수를 호출
+            save(scrums: scrums) { result in
+                // 섹션의 load 함수와 동일한 패턴에 따라 결과를 전환하여 함수를 끝냄
+                switch result {
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                case .success(let scrumsSaved):
+                    continuation.resume(returning: scrumsSaved)
+                }
+            }
+        }
+    }
+    
     static func load(completion: @escaping (Result<[DailyScrum], Error>)->Void) {
         DispatchQueue.global(qos: .background).async {
             do {
