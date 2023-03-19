@@ -1,3 +1,32 @@
-# SwiftUI 관련 공부
+# SwiftUI
 
-각 폴더에 들어가면 정리된 것들이 많음
+## 독학용 레파토지
+
+## Swift를 공부하게 된 계기
+
+전향 후 인턴으로 swiftUI로 프로젝트를 진행하게 되고 UI를 그리는 등 업무를 하다보니 정리 및 공부의 필요성을 느낌
+<br/>
+
+혼자서 낙서장느낌으로 하는 폴더와 애플 공식문서 tutorial로 나누어 학습을 할 예정
+<br/>
+
+어느정도 이해도가 생기면 사이드/토이 프로젝트를 진행 예정
+<br/>
+
+즉 기본기를 갈고 닦는 "레파지토리"
+<br/>
+
+---
+
+### [iOS 공식 Tutorials 학습 레파지토리](https://github.com/BOLTB0X/SwiftUI/tree/main/iOS%20App%20Dev%20Tutorials)
+
+<br/>
+
+### [업무나 혼자서 적용해보았던 것들 정리 레파지토리](https://github.com/BOLTB0X/SwiftUI/tree/main/self-taught%20graffiti)
+
+<br/>
+
+### [study](https://github.com/BOLTB0X/SwiftUI/tree/main/study/SwiftUIBasic/Test)
+
+- 동작방식
+  <br/>
