@@ -46,6 +46,11 @@ iOS로 전향 후 인턴 생활과 같이 시너지 날 공부가 무엇일지 �
 [관련 정리 글](https://github.com/BOLTB0X/SwiftUI/tree/main/iOS%20App%20Dev%20Tutorials/Chapter%206%20Persistence%20and%20concurrency)
 <br/>
 
+### Chapter 7 Drawing
+
+[관련 정리 글](https://github.com/BOLTB0X/SwiftUI/tree/main/iOS%20App%20Dev%20Tutorials/Chapter%207%20Drawing)
+<br/>
+
 ## 공식 튜토리얼 사이트
 
 > https://developer.apple.com/tutorials/app-dev-training
