@@ -6,4 +6,44 @@
 이 튜토리얼에서는 이 프로그레스 뷰를 그리는 데 필요한 뷰를 생성
 <br/>
 
-TODO
+### Binding 미리보기 적용
+
+```swift
+struct MyView: View {
+    @Binding var names: [String]
+    var body: some View {
+        List(names, id: \.self) { name in
+            Text(name)
+        }
+    }
+}
+
+struct MyView_Preview: PreviewProvider {
+    @State static var names = ["Jonathan", "Lucy", "Kim"]
+    static var previews: some View {
+        MyView(names: $names)
+    }
+}
+```
+
+프로퍼티 이름은 정적 @State 속성이므로 $names로 바인딩에 액세스
+<br/>
+
+### path
+
+```swift
+struct MyShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        Path {  path in
+            path.addLine(to: CGPoint(x: 100, y: 100))
+        }
+     }
+}
+```
+
+### 도형에 각도 넣기
+
+```swift
+Rectangle()
+   .rotation(Angle(degrees: 45))
+```
