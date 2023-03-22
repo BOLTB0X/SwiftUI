@@ -124,7 +124,17 @@ AF.request(url)
 
 ---
 
+[API 연동](https://github.com/BOLTB0X/SwiftUI/tree/main/study/Alamofire/practiceAlamofire)
+
+---
+
 ## 참고
 
 https://velog.io/@simh3077/URLSession과-Alamofire를-비교해보자.-with-SwiftUI
+<br/>
+
 https://github.com/Alamofire/Alamofire
+<br/>
+
+https://velog.io/@simh3077/URLSession과-Alamofire를-비교해보자.-with-SwiftUI
+<br/>

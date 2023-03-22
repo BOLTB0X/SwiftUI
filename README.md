@@ -28,5 +28,8 @@
 
 ### [study](https://github.com/BOLTB0X/SwiftUI/tree/main/study/SwiftUIBasic/Test)
 
-- 동작방식
+- [동작방식](https://github.com/BOLTB0X/SwiftUI/tree/main/study/SwiftUIBasic/Test)
+  <br/>
+
+- [Alamofire](https://github.com/BOLTB0X/SwiftUI/tree/main/study/Alamofire)
   <br/>
