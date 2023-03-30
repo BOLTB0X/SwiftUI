@@ -36,3 +36,8 @@ func nameToggle() {
     }
 }
 ```
+
+## 참고
+
+https://developer.apple.com/documentation/swiftui/binding
+<br/>
