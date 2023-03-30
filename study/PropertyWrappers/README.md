@@ -13,16 +13,16 @@ SwiftUI를 자주 쓰다보니 @ObservedObject, @State, @EnvironObject, @Binding
 **_반복되는 코드나 프로퍼티 중복등 재사용을 줄이기 위해 사용하게 됌_**
 <br/>
 
-- [@State]()
+- [@State](https://github.com/BOLTB0X/SwiftUI/blob/main/study/PropertyWrappers/md/state.md)
   <br/>
 
-- [@Binding]()
+- [@Binding](https://github.com/BOLTB0X/SwiftUI/blob/main/study/PropertyWrappers/md/binding.md)
   <br/>
 
-- [@ObservableObject]()
+- [@ObservableObject](https://github.com/BOLTB0X/SwiftUI/blob/main/study/PropertyWrappers/md/observableObject.md)
   <br/>
 
-- [@EnvironmentObject]()
+- [@EnvironmentObject](https://github.com/BOLTB0X/SwiftUI/blob/main/study/PropertyWrappers/md/EnvironmentObject.md)
   <br/>
 
 ---
