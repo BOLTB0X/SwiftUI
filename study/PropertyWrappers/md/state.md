@@ -17,9 +17,9 @@
 - 왠만하면 private로 사용
   <br/>
 
-<img src="./state1.png", height="800", width="300">
+<img src="./state1.png">
 
-<img src="./state2.png", height="800", width="300">
+<img src="./state2.png">
 
 이를 코드로 구현하면
 <br/>
