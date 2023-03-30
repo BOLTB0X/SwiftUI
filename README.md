@@ -1,6 +1,4 @@
-# SwiftUI
-
-## 독학용 레파토지
+# SwiftUI: 정말 낙서장 같은 곳
 
 ## Swift를 공부하게 된 계기
 
@@ -18,11 +16,18 @@
 
 ---
 
-### [iOS 공식 Tutorials 학습 레파지토리](https://github.com/BOLTB0X/SwiftUI/tree/main/iOS%20App%20Dev%20Tutorials)
+## Apple 공식문서
+
+[iOS 공식 Tutorials 학습 레파지토리](https://github.com/BOLTB0X/SwiftUI/tree/main/iOS%20App%20Dev%20Tutorials)
 
 <br/>
 
-### [업무나 혼자서 적용해보았던 것들 정리 레파지토리](https://github.com/BOLTB0X/SwiftUI/tree/main/self-taught%20graffiti)
+TODO
+<br/>
+
+## 이것저것
+
+[업무나 혼자서 적용해보았던 것들 정리 레파지토리](https://github.com/BOLTB0X/SwiftUI/tree/main/self-taught%20graffiti)
 
 <br/>
 
