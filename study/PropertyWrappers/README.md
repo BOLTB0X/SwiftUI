@@ -30,6 +30,12 @@ SwiftUI를 자주 쓰다보니 @ObservedObject, @State, @EnvironObject, @Binding
 ## 참고
 
 https://developer.apple.com/documentation/swiftui/state
+<br/>
 https://docs.swift.org/swift-book/documentation/the-swift-programming-language/
+<br/>
 https://ios-development.tistory.com/895
+<br/>
+https://zeddios.tistory.com/1221
+<br/>
+https://seorenn.github.io/note/swiftui-property-wrappers.html
 <br/>
