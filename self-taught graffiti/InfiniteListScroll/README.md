@@ -10,7 +10,7 @@
 
 ## 학습 과정
 
-**_ 코드 한줄 한줄에 주석을 작성하며 진행_**, 위 링크를 클릭 후 주석을 읽으면서 따라가면 이해하기 수월
+코드 한줄 한줄에 주석을 작성하며 진행, 위 링크를 클릭 후 주석을 읽으면서 따라가면 이해하기 수월
 <br/>
 
 1. 모델 정의와 API fetch부터 진행 [Model+API](https://github.com/BOLTB0X/SwiftUI/blob/main/self-taught%20graffiti/InfiniteListScroll/InfiniteListScroll/API%2BModels.swift)
