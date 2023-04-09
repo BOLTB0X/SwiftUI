@@ -18,7 +18,7 @@ class ModelsViewModel: ObservableObject {
         guard cur.LoadNextPage else { return }
         
         // 현재 API 쿼리문에 맞춰 가져올 메소드의 매개변수에 셋팅
-        // feed목록 불러오기인 경우 limt sort 등을 이용하여 불러와야함
+        // API 따라 쿼리나 파라미터들이 변경됨
         APIDemoManager.fetchURL(query: "swift", page: cur.page)
         // sink로 subscriber와 publisher 연결
             .sink(receiveCompletion: onReceive,
