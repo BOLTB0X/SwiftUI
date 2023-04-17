@@ -12,6 +12,12 @@
 원래는 상위 view의 @State 뷰로 연결해서 사용하며 두 값이 양방향 연결이어서 한쪽의 값이 변한다면 다른 한쪽도 변경
 <br/>
 
+<img width="236" alt="스크린샷 2023-04-17 오후 11 18 02" src="https://user-images.githubusercontent.com/83914919/232518686-76f2789a-e7f2-4878-af3c-3470ee73125b.png">
+<br/>
+
+<img width="241" alt="스크린샷 2023-04-17 오후 11 18 19" src="https://user-images.githubusercontent.com/83914919/232519015-12e4c041-aed0-4ee7-bdfc-8dd4ac9db935.png">
+<br/>
+
 ```swift
 @Binding var name: String
 
@@ -36,6 +42,30 @@ func nameToggle() {
     }
 }
 ```
+
+<br/>
+
+```swift
+import SwiftUI
+
+// 상위 뷰
+struct ContentView: View {
+
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+        }
+        .padding()
+    }
+}
+```
+
+<br/>
+
+[코드 보기](https://github.com/BOLTB0X/SwiftUI/blob/main/self-taught%20graffiti/PracticePropertyWrapper/PracticePropertyWrapper/BindingView.swift)
 
 ## 참고
 

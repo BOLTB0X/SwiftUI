@@ -48,3 +48,10 @@ struct ObservedObjectView: View {
     }
 }
 ```
+
+<br/>
+
+주로 ViewModel에 이용
+<br/>
+
+[코드 보기](https://github.com/BOLTB0X/SwiftUI/blob/main/self-taught%20graffiti/PracticePropertyWrapper/PracticePropertyWrapper/ObservedObjectView.swift)
