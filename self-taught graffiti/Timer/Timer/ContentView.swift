@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     let date = Date()
     @State var timeRemaining : Int = 100
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
