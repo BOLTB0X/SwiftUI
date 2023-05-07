@@ -1,4 +1,10 @@
-# SwiftUI: 정말 낙서장 같은 곳
+# SwiftUI
+
+![img](https://velog.velcdn.com/images/j_aion/post/16cdb2ef-b9c7-4283-ac05-d7b97a1977e6/image.jpg)
+<br/>
+
+정말 낙서장 같은 곳
+<br/>
 
 ## Swift를 공부하게 된 계기
 
@@ -16,22 +22,21 @@
 
 ---
 
-## Apple 공식문서
+## Contents
 
-[iOS 공식 Tutorials 학습 레파지토리](https://github.com/BOLTB0X/SwiftUI/tree/main/iOS%20App%20Dev%20Tutorials)
+---
 
-<br/>
+### Apple 공식문서
 
-TODO
-<br/>
+- [Introducing SwiftUI](https://github.com/BOLTB0X/SwiftUI_Tutorials)
 
-## 이것저것
+- [Develop apps for iOS(SwiftUI)](https://github.com/BOLTB0X/SwiftUI/tree/main/iOS%20App%20Dev%20Tutorials)
+  <br/>
 
-[업무나 혼자서 적용해보았던 것들 정리 레파지토리](https://github.com/BOLTB0X/SwiftUI/tree/main/self-taught%20graffiti)
+- [Learning SwiftUI]()
+  <br/>
 
-<br/>
-
-### [study](https://github.com/BOLTB0X/SwiftUI/tree/main/study/SwiftUIBasic/Test)
+### SwiftUI Study
 
 - [동작방식](https://github.com/BOLTB0X/SwiftUI/tree/main/study/SwiftUIBasic/Test)
   <br/>

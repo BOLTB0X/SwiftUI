@@ -1,5 +1,8 @@
 # 애플 공식문서(iOS App Dev Tutorial)
 
+![img](https://docs-assets.developer.apple.com/published/cf7c5d4737849fe54b29508de7ab2786/@2xswiftui-fundamentals-tutorial-hero.png)
+<br/>
+
 ## 시작한 계기
 
 iOS로 전향 후 인턴 생활과 같이 시너지 날 공부가 무엇일지 고민함
