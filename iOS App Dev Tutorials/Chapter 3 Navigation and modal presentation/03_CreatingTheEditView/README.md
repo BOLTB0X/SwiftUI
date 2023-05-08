@@ -58,15 +58,11 @@ view 내에서 프로퍼티를 변경해야 하므로 @State 래퍼를 사용하
 
 1. How do you initialize a Slider view that lets the user pick only the values 5.0, 10.0, 15.0, and 20.0?
 
-<br/>
-
 ```swift
 Slider(value: $itemCount, in: 5...20, step: 5.0)
+// Slider 이니셜라이저에 범위 및 단계 값을 전달
 ```
 
-<br/>
-
-Slider 이니셜라이저에 범위 및 단계 값을 전달
 <br/>
 
 2. Which modifier can you add to the button to present EditView?
@@ -82,14 +78,11 @@ struct ContentView: View {
           .sheet(isPresented: $isPresented) {
             EditView()
         }
-        //
+        // 시트 수정자는 Bool 및 뷰 빌더에 대한 바인딩을 사용
     }
 }
 ```
 
-<br/>
-
-시트 수정자는 Bool 및 뷰 빌더에 대한 바인딩을 사용
 <br/>
 
 3. Which code snippet removes an element from the names array?
@@ -113,9 +106,7 @@ ForEach(names, id: \.self) { name in
 .onDelete { indices in
     names.remove(atOffsets: indices)
 }
+// remove(atOffsets:) 메서드는 IndexSet을 사용하여 배열에서 요소를 제거
 ```
 
-<br/>
-
-remove(atOffsets:) 메서드는 IndexSet을 사용하여 배열에서 요소를 제거
 <br/>

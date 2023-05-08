@@ -105,11 +105,9 @@ struct CategoryView: View {
         }
     }
 }
+// NavigationLink는 DetailView에 목적지를 표시
 ```
 
-<br/>
-
-NavigationLink는 DetailView에 목적지를 표시
 <br/>
 
 3. Which code snippet displays the navigation title in the NavigationStack?

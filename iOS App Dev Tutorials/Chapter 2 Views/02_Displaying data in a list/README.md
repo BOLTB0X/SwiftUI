@@ -69,6 +69,8 @@ List(sessions, id: \.sessionNumber) { session in
 
 <br/>
 
+---
+
 2. Why does List in ContentView fail to compile?
 
 ```swift
@@ -106,6 +108,8 @@ List 클로저는 View를 반환해야 하지만 guard 문은 항목을 사용�
 
 Guard 대신 if 문을 사용하여 오류를 수정할 수 있음
 <br/>
+
+---
 
 3. Which code snippet specifies a Text view as the main screen of the app?
 

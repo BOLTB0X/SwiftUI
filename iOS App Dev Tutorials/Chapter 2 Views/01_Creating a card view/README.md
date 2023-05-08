@@ -26,6 +26,8 @@ var body: some View {
 
 <br/>
 
+---
+
 2. Which framework should you import to define the structure?
    <br/>
 
@@ -40,6 +42,8 @@ struct Person {
 ```
 
 <br/>
+
+---
 
 3. How should you set the accessibility label on Image in the code snippet below?
    <br/>

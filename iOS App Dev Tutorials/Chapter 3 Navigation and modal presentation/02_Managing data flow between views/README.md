@@ -32,7 +32,7 @@ UI는 모델의 변경에 의해서 자동으로 반응하고 변경되어 질 �
 
 ## Swift property wrappers
 
-- @State
+#### @State
 
 사용자 상호 작용은 @State 속성을 변경할 수 있고 시스템은 해당 속성에 의존하는 보기를 업데이트하여 새 버전의 사용자 인터페이스를 렌더링함
 <br/>
@@ -49,7 +49,7 @@ UI는 모델의 변경에 의해서 자동으로 반응하고 변경되어 질 �
 
 <br/>
 
-- @Binding
+#### @Binding
 
 @Binding으로 래핑하는 속성은 @State 프로퍼티과 같은 기존 소스와 읽기 및 쓰기 액세스를 공유
 <br/>
@@ -80,21 +80,16 @@ UI는 모델의 변경에 의해서 자동으로 반응하고 변경되어 질 �
 ## 퀴즈
 
 1. What does labeling a property as @State in SwiftUI do?
+   <br/>
 
-<br/>
-
-**@State는 로컬 프로퍼티을 변경 가능하게 만들고 @State를 정의하는 view는 프로퍼티의 변경 사항을 관찰하고 그에 따라 view의 적절한 부분을 업데이트합**
-<br/>
-
-@State는 프로퍼티을 정의한 view와 부모 view에서 프로퍼티을 변경 가능하게 만듬
-<br/>
+   **@State는 로컬 프로퍼티을 변경 가능하게 만들고 @State를 정의하는 view는 프로퍼티의 변경 사항을 관찰하고 그에 따라 view의 적절한 부분을 업데이트합**
+   <br/>
+   @State는 프로퍼티을 정의한 view와 부모 view에서 프로퍼티을 변경 가능하게 만듬
+   <br/>
 
 2. Which property wrapper can you add to the beginning of a child view’s declaration to include a reference to the parent view’s @State property?
-
-<br/>
-
-**@Binding**
-<br/>
-
-@Binding으로 레이블이 지정된 프로퍼티는 다른 곳에서 정의된 @State 프로퍼티 또는 소스를 참조함
-<br/>
+   <br/>
+   **@Binding**
+   <br/>
+   @Binding으로 레이블이 지정된 프로퍼티는 다른 곳에서 정의된 @State 프로퍼티 또는 소스를 참조함
+   <br/>

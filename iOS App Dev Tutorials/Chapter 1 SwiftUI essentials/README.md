@@ -31,6 +31,8 @@ VStack {
 
 <br/>
 
+---
+
 2. Which code snippet sets the font for the text view?
    <br/>
 
@@ -42,6 +44,8 @@ VStack(alignment: .leading) {
 ```
 
 <br/>
+
+---
 
 3. Which code snippet produces the output “Skip song. Button.” from VoiceOver?
    <br/>
