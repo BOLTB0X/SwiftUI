@@ -1,6 +1,6 @@
 # 애플 공식문서(iOS App Dev Tutorial)
 
-![img](https://docs-assets.developer.apple.com/published/cf7c5d4737849fe54b29508de7ab2786/@2xswiftui-fundamentals-tutorial-hero.png)
+![img](https://docs-assets.developer.apple.com/published/19071396f55a0ba79ce4c5ede53e396c/SUI_volume@2x.png)
 <br/>
 
 ## 시작한 계기
