@@ -1,13 +1,11 @@
 # Managing State and Life Cycle
 
-## Life Cycle
+## Intro
 
-정리글은 [여기](https://github.com/BOLTB0X/Swift_Study/tree/main/study/LifeCycle)
+[LifeCycle](https://github.com/BOLTB0X/Swift_Study/tree/main/study/LifeCycle)
 <br/>
 
-## SwiftUI의 동작 방식
-
-정리글은 [여기](https://github.com/BOLTB0X/SwiftUI/tree/main/study/SwiftUIBasic/Test)
+[SwiftUI의 동작 방식](https://github.com/BOLTB0X/SwiftUI/tree/main/study/SwiftUIBasic/Test)
 <br/>
 
 ## accessibility in SwiftUI
