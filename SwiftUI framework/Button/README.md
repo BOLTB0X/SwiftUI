@@ -144,7 +144,7 @@ List {
 
 <br/>
 
-![img1](https://docs-assets.developer.apple.com/published/2e12c7d7fbb038ed1f0b771ba84656df/Button-1~dark@2x.png)
+![img1](https://docs-assets.developer.apple.com/published/2e12c7d7fbb038ed1f0b771ba84656df/Button-1~dark@2x.png){: width="231" height="100"}
 <br/>
 
 ## predefined buttonStyle
