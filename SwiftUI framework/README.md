@@ -3,7 +3,7 @@
 ![img](https://d33wubrfki0l68.cloudfront.net/f121809e61b6ca0a9e7fa17ab3530ca87f6e1d70/7b5c0/images/swiftui-tutorial-introduction-3.png)
 <br/>
 
-프레임워크 문법 관련 기본기~~(헷갈렸던 것들)~~들 정리
+프레임워크 문법 관련 기본기 및 헷갈렸던 것들 정리
 <br/>
 
 ## Contents
