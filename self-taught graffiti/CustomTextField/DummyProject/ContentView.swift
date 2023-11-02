@@ -6,58 +6,32 @@
 //
 
 import SwiftUI
-import Combine
+
+enum Field {
+    case hour
+    case minutes
+    case seconds
+}
 
 struct ContentView: View {
-    @State private var hours = "00"
-        @State private var minutes = "00"
-        @State private var seconds = "00"
+    @State private var hour: String = ""
+    @State private var minutes: String = ""
+    @State private var seconds: String = ""
+    @FocusState private var focusField: Field?
     
     var body: some View {
-        CustomTextField(text: $hours)
-//        HStack {
-//            CustomTextField(text: $hours)
-//            Text(":")
-//            CustomTextField(text: $minutes)
-//            Text(":")
-//            CustomTextField(text: $seconds)
-//        }
-
-        //TwoDigitInputView()
-        //inputTextField()
-//        VStack {
-//            Picker("Minutes", selection: $selectedMinutes) {
-//                ForEach(0 ..< 60) {
-//                    Text("\($0) min")
-//                }
-//            }
-//            .pickerStyle(WheelPickerStyle())
-//            
-//            Picker("Seconds", selection: $selectedSeconds) {
-//                ForEach(0 ..< 60) {
-//                    Text("\($0) sec")
-//                }
-//            }
-//            .pickerStyle(WheelPickerStyle())
-//            
-//            HStack {
-//                TextField("Minutes", text: $textMinutes)
-//                    .keyboardType(.numberPad)
-//                    .onReceive(Just(textMinutes)) { input in
-//                        if let minutes = Int(input) {
-//                            selectedMinutes = minutes
-//                        }
-//                    }
-//                
-//                TextField("Seconds", text: $textSeconds)
-//                    .keyboardType(.numberPad)
-//                    .onReceive(Just(textSeconds)) { input in
-//                        if let seconds = Int(input) {
-//                            selectedSeconds = seconds
-//                        }
-//                    }
-//            }
-//        }
+        VStack {
+            TextField("hh", text: $hour)
+                .focused($focusField, equals: .hour)
+            
+            TextField("mm", text: $minutes)
+                .focused($focusField, equals: .minutes)
+            
+            TextField("ss", text: $seconds)
+                .focused($focusField, equals: .seconds)
+        }
+        .padding()
+        //CustomTextField(text: $hours)
     }
 }
 

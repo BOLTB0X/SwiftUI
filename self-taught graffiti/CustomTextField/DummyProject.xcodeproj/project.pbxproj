@@ -11,10 +11,7 @@
 		56AF0B5D2AEE0F39009AF8A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF0B5C2AEE0F39009AF8A2 /* ContentView.swift */; };
 		56AF0B5F2AEE0F3D009AF8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56AF0B5E2AEE0F3D009AF8A2 /* Assets.xcassets */; };
 		56AF0B622AEE0F3D009AF8A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56AF0B612AEE0F3D009AF8A2 /* Preview Assets.xcassets */; };
-		56AF0B692AEE1654009AF8A2 /* inputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF0B682AEE1654009AF8A2 /* inputTextField.swift */; };
-		56AF0B6B2AEE7915009AF8A2 /* TwoDigitTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF0B6A2AEE7915009AF8A2 /* TwoDigitTextField.swift */; };
 		56AF0B6D2AEE7E74009AF8A2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF0B6C2AEE7E74009AF8A2 /* CustomTextField.swift */; };
-		56AF0B6F2AEE8310009AF8A2 /* ClearTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF0B6E2AEE8310009AF8A2 /* ClearTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +20,7 @@
 		56AF0B5C2AEE0F39009AF8A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		56AF0B5E2AEE0F3D009AF8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56AF0B612AEE0F3D009AF8A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		56AF0B682AEE1654009AF8A2 /* inputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputTextField.swift; sourceTree = "<group>"; };
-		56AF0B6A2AEE7915009AF8A2 /* TwoDigitTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoDigitTextField.swift; sourceTree = "<group>"; };
 		56AF0B6C2AEE7E74009AF8A2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		56AF0B6E2AEE8310009AF8A2 /* ClearTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +55,9 @@
 			children = (
 				56AF0B5A2AEE0F39009AF8A2 /* DummyProjectApp.swift */,
 				56AF0B5C2AEE0F39009AF8A2 /* ContentView.swift */,
+				56AF0B6C2AEE7E74009AF8A2 /* CustomTextField.swift */,
 				56AF0B5E2AEE0F3D009AF8A2 /* Assets.xcassets */,
 				56AF0B602AEE0F3D009AF8A2 /* Preview Content */,
-				56AF0B682AEE1654009AF8A2 /* inputTextField.swift */,
-				56AF0B6A2AEE7915009AF8A2 /* TwoDigitTextField.swift */,
-				56AF0B6C2AEE7E74009AF8A2 /* CustomTextField.swift */,
-				56AF0B6E2AEE8310009AF8A2 /* ClearTextField.swift */,
 			);
 			path = DummyProject;
 			sourceTree = "<group>";
@@ -149,12 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56AF0B692AEE1654009AF8A2 /* inputTextField.swift in Sources */,
 				56AF0B5D2AEE0F39009AF8A2 /* ContentView.swift in Sources */,
-				56AF0B6B2AEE7915009AF8A2 /* TwoDigitTextField.swift in Sources */,
 				56AF0B5B2AEE0F39009AF8A2 /* DummyProjectApp.swift in Sources */,
 				56AF0B6D2AEE7E74009AF8A2 /* CustomTextField.swift in Sources */,
-				56AF0B6F2AEE8310009AF8A2 /* ClearTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
