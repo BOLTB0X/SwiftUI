@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Combine
 enum Field {
     case hour
     case minutes
@@ -23,15 +23,14 @@ struct ContentView: View {
         VStack {
             TextField("hh", text: $hour)
                 .focused($focusField, equals: .hour)
-            
-            TextField("mm", text: $minutes)
-                .focused($focusField, equals: .minutes)
-            
-            TextField("ss", text: $seconds)
-                .focused($focusField, equals: .seconds)
+                .onChange(of: hour) { newValue in
+                    if newValue.count > 1 && newValue.first! == "0" {
+                        hour = "0"
+                    }
+                }
+                .padding()
+            //CustomTextField(text: $hours)
         }
-        .padding()
-        //CustomTextField(text: $hours)
     }
 }
 
