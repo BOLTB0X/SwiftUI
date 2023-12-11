@@ -11,6 +11,8 @@ enum QuestionType {
     case short
     case questions
     case radio
+    case goods
+    case maths
 }
 
 struct FormItem: Identifiable {
@@ -45,6 +47,10 @@ struct ContentView: View {
                             FormItemRow2(item: item, subText: "질문형 답변")
                         case .radio:
                             FormItemRow3()
+                        case .goods:
+                            GoodsListView()
+                        case .maths:
+                            MatchScheduleView()
                         }
                     }
                 }
@@ -65,16 +71,20 @@ struct ContentView: View {
         }
         .actionSheet(isPresented: $addBtn, content: {
             ActionSheet(title: Text("종류"), message: Text("설문 항목 추가"), buttons: [
-                .default(Text("단답형 폼 추가"), action: {
+                .default(Text("팀 정보 추가"), action: {
                     let newItem = FormItem(type: .short)
                     surveyItems.append(newItem)
                 }),
-                .default(Text("질문형 폼 추가"), action: {
+                .default(Text("관련 기사 추가"), action: {
                     let newItem = FormItem(type: .questions)
                     surveyItems.append(newItem)
                 }),
-                .default(Text("체크 폼 추가"), action: {
-                    let newItem = FormItem(type: .radio)
+                .default(Text("굿즈 폼 추가"), action: {
+                    let newItem = FormItem(type: .goods)
+                    surveyItems.append(newItem)
+                }),
+                .default(Text("경기일정 폼 추가"), action: {
+                    let newItem = FormItem(type: .maths)
                     surveyItems.append(newItem)
                 }),
                 .cancel(Text("Cancel"))
