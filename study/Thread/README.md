@@ -1,20 +1,14 @@
-## Thread in iOS
+# Thread in iOS
 
 > Thread는 작업을 수행할 수 있는 프로세스를 수행할 수 있으므로 기본적으로 앱 안에 많은 Thread가 존재
-> <br/>
-> App을 구성하는 모든 코드는 main Thread 그 안에 특정 thread에 선언되어 수행되는 것
-> <br/>
 
-## Intro
+App을 구성하는 모든 코드는 main Thread 그 안에 특정 thread에 선언되어 수행되는 것
 
-[dispatchQueue]("")를 통해서 코드들이 실행될 때 특별히 지정하지 않으면 Main Thread에서 작업이 진행 됌
-<br/>
+dispatchQueue 를 통해서 코드들이 실행될 때 특별히 지정하지 않으면 Main Thread에서 작업이 진행 됌
 
 그렇다면 개발을 하다보면 코드가 많아질 것이고 그럼 Main Thread에서 많은 작업을 하게 될 것임 -> App의 속도와 같은 성능이 떨어짐
-<br/>
 
-그래서 URL 같은 다운로드 작업([URLSesscion](), [Combine](), [RxSwift]() 등)은 main이 아닌 background에서, Main Thread가 아닌 Background Thread에서 작업하는 것이 가장 이상적임
-<br/>
+그래서 URL 같은 다운로드 작업은 main이 아닌 background에서, Main Thread가 아닌 Background Thread에서 작업하는 것이 가장 이상적임
 
 ## Thread의 업데이트 과정
 
@@ -48,16 +42,11 @@ class MainThreadViewModel: ObservableObject {
 }
 ```
 
-// 이미지
-
 사용자가 앱을 스크롤했을 때 갑자기 속도가 늦어지거나 렉이 발생하면?
-<br/>
 
 높은 확률로 Main Thread에서 너무 많은 프로세스가 진행 중이라는 것
-<br/>
 
 이 것을 해결하기 위해서는 background Thread로 이동시켜야 함
-<br/>
 
 ```swift
 class BackgroundThreadViewModel: ObservableObject {
@@ -87,12 +76,9 @@ class BackgroundThreadViewModel: ObservableObject {
 }
 ```
 
-// 이미지
 UI를 이동할 때(스크롤할 때)는 여전히 Main Thread에 존재 -> **_UI에 영향을 미치는 모든 작업은 Main Thread에서 수행_**
-<br/>
 
 fetchData() 동작 방식
-<br/>
 
 - Background Thread에서 데이터를 다운로드, 데이터를 처리하고 데이터를 이동
   <br/>
@@ -106,7 +92,6 @@ fetchData() 동작 방식
   <br/>
 
 **_즉 Data Array를 업데이트하는 순간 마다 Main Thread에서 수행 되도록 수정_**
-<br/>
 
 ```swift
 func fetchData() {
@@ -145,11 +130,10 @@ func fetchData() {
 
 ## 참고
 
-https://developer.apple.com/documentation/foundation/thread
-<br/>
-https://seons-dev.tistory.com/entry/SwiftUI-Background-Threads-Queues
-<br/>
-https://www.hackingwithswift.com/read/9/4/back-to-the-main-thread-dispatchqueuemain
-<br/>
-https://medium.com/macoclock/update-swiftui-from-background-threads-fa11d07152f4
-<br/>
+[공식문서 - Thread](https://developer.apple.com/documentation/foundation/thread)
+
+[블로그 참조 - 1](https://seons-dev.tistory.com/entry/SwiftUI-Background-Threads-Queues)
+
+[블로그 참조 - 2](https://www.hackingwithswift.com/read/9/4/back-to-the-main-thread-dispatchqueuemain)
+
+[블로그 참조 - 3](https://medium.com/macoclock/update-swiftui-from-background-threads-fa11d07152f4)
