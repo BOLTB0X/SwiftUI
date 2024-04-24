@@ -42,6 +42,10 @@ struct LockScreenWorkoutLiveActivityView: View {
                 Spacer()
             } // HStack
             
+            Button("Click") {
+                
+            }
+            
             Text("Keep it going!!!")
                 .font(.custom("Georgia", size: 14, relativeTo: .headline))
                 .italic()

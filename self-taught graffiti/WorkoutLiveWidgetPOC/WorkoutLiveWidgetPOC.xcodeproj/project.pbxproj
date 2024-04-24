@@ -12,6 +12,8 @@
 		BEB28F052BD4CCEC0009A9FA /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8BD3D2BD246CE00180B18 /* Workout.swift */; };
 		BEB28F082BD4CDC70009A9FA /* WorkoutWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB28F072BD4CDC70009A9FA /* WorkoutWidgetAttributes.swift */; };
 		BEB28F092BD4CDC70009A9FA /* WorkoutWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB28F072BD4CDC70009A9FA /* WorkoutWidgetAttributes.swift */; };
+		BEF8B60F2BD8E78D000C12B2 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8B60E2BD8E78D000C12B2 /* TimerView.swift */; };
+		BEF8B6112BD8E7A7000C12B2 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8B6102BD8E7A7000C12B2 /* TimerManager.swift */; };
 		BEF8BD152BD23E3400180B18 /* WorkoutLiveWidgetPOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8BD142BD23E3400180B18 /* WorkoutLiveWidgetPOCApp.swift */; };
 		BEF8BD172BD23E3400180B18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8BD162BD23E3400180B18 /* ContentView.swift */; };
 		BEF8BD192BD23E3700180B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF8BD182BD23E3700180B18 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		BEB28F022BD4CC360009A9FA /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		BEB28F072BD4CDC70009A9FA /* WorkoutWidgetAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutWidgetAttributes.swift; sourceTree = "<group>"; };
 		BEB28F0A2BD4D3FA0009A9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BEF8B60E2BD8E78D000C12B2 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		BEF8B6102BD8E7A7000C12B2 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		BEF8BD112BD23E3400180B18 /* WorkoutLiveWidgetPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLiveWidgetPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF8BD142BD23E3400180B18 /* WorkoutLiveWidgetPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLiveWidgetPOCApp.swift; sourceTree = "<group>"; };
 		BEF8BD162BD23E3400180B18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				BEB28F022BD4CC360009A9FA /* WorkoutViewModel.swift */,
 				BEF8BD162BD23E3400180B18 /* ContentView.swift */,
 				BEF8BD3D2BD246CE00180B18 /* Workout.swift */,
+				BEF8B60E2BD8E78D000C12B2 /* TimerView.swift */,
+				BEF8B6102BD8E7A7000C12B2 /* TimerManager.swift */,
 				BEF8BD182BD23E3700180B18 /* Assets.xcassets */,
 				BEF8BD1A2BD23E3700180B18 /* Preview Content */,
 			);
@@ -257,10 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF8B60F2BD8E78D000C12B2 /* TimerView.swift in Sources */,
 				BEB28F082BD4CDC70009A9FA /* WorkoutWidgetAttributes.swift in Sources */,
 				BEF8BD172BD23E3400180B18 /* ContentView.swift in Sources */,
 				BEB28F032BD4CC360009A9FA /* WorkoutViewModel.swift in Sources */,
 				BEF8BD152BD23E3400180B18 /* WorkoutLiveWidgetPOCApp.swift in Sources */,
+				BEF8B6112BD8E7A7000C12B2 /* TimerManager.swift in Sources */,
 				BEB28F052BD4CCEC0009A9FA /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
