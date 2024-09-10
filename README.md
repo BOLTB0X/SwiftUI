@@ -27,12 +27,14 @@
 
 - [Alamofire](https://github.com/BOLTB0X/SwiftUI/tree/main/study/Alamofire)
 
-### ETC
+### Study
 
-- [DispatchQueue - GCD(Grand Central Dispatch)](https://github.com/BOLTB0X/SwiftUI/blob/main/study/GCDPlayground/dispatchQue.md)
+- [SwfitUI 동작 방식](https://github.com/BOLTB0X/SwiftUI/tree/main/study/SwiftUIBasic/Test)
   <br/>
 
-- [Sync/Async - GCD(Grand Central Dispatch)](https://github.com/BOLTB0X/SwiftUI/blob/main/study/GCDPlayground/syncAsync2.md)
+- [PropertyWrappers](https://github.com/BOLTB0X/SwiftUI/tree/main/study/PropertyWrappers)
   <br/>
 
 - [Thread](https://github.com/BOLTB0X/SwiftUI/tree/main/study/Thread)
+  <br/>
+
