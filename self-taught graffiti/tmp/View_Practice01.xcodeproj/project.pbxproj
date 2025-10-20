@@ -19,6 +19,8 @@
 		56AF0BC52AEFEC14009AF8A2 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF0BC42AEFEC14009AF8A2 /* PasswordView.swift */; };
 		56AF0BC72AEFEC24009AF8A2 /* NextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF0BC62AEFEC24009AF8A2 /* NextButtonView.swift */; };
 		56AF0BC92AEFFC07009AF8A2 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF0BC82AEFFC07009AF8A2 /* dummy.swift */; };
+		BEEABC112EA626DA00903C45 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABC102EA626DA00903C45 /* MenuView.swift */; };
+		BEEABC132EA6283E00903C45 /* FlavorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABC122EA6283E00903C45 /* FlavorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		56AF0BC42AEFEC14009AF8A2 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		56AF0BC62AEFEC24009AF8A2 /* NextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonView.swift; sourceTree = "<group>"; };
 		56AF0BC82AEFFC07009AF8A2 /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
+		BEEABC102EA626DA00903C45 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		BEEABC122EA6283E00903C45 /* FlavorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				56AF0BC42AEFEC14009AF8A2 /* PasswordView.swift */,
 				56AF0BC62AEFEC24009AF8A2 /* NextButtonView.swift */,
 				56AF0BC82AEFFC07009AF8A2 /* dummy.swift */,
+				BEEABC102EA626DA00903C45 /* MenuView.swift */,
+				BEEABC122EA6283E00903C45 /* FlavorView.swift */,
 			);
 			path = View_Practice01;
 			sourceTree = "<group>";
@@ -166,8 +172,10 @@
 				56AF0BC32AEFEBAA009AF8A2 /* LoginView.swift in Sources */,
 				56AF0B7F2AEEB368009AF8A2 /* ContentView.swift in Sources */,
 				56AF0BC52AEFEC14009AF8A2 /* PasswordView.swift in Sources */,
+				BEEABC112EA626DA00903C45 /* MenuView.swift in Sources */,
 				56AF0BAB2AEF76EB009AF8A2 /* ViewModel.swift in Sources */,
 				56AF0BC92AEFFC07009AF8A2 /* dummy.swift in Sources */,
+				BEEABC132EA6283E00903C45 /* FlavorView.swift in Sources */,
 				56AF0B7D2AEEB368009AF8A2 /* View_Practice01App.swift in Sources */,
 				56AF0BBF2AEFB847009AF8A2 /* EmailView.swift in Sources */,
 				56AF0BC12AEFE29C009AF8A2 /* NextView.swift in Sources */,
