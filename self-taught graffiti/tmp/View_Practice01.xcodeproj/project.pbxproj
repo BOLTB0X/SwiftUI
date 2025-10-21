@@ -21,6 +21,7 @@
 		56AF0BC92AEFFC07009AF8A2 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF0BC82AEFFC07009AF8A2 /* dummy.swift */; };
 		BEEABC112EA626DA00903C45 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABC102EA626DA00903C45 /* MenuView.swift */; };
 		BEEABC132EA6283E00903C45 /* FlavorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABC122EA6283E00903C45 /* FlavorView.swift */; };
+		BEEABC2F2EA7840500903C45 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABC2E2EA7840500903C45 /* BrowserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		56AF0BC82AEFFC07009AF8A2 /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		BEEABC102EA626DA00903C45 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BEEABC122EA6283E00903C45 /* FlavorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorView.swift; sourceTree = "<group>"; };
+		BEEABC2E2EA7840500903C45 /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				56AF0BC82AEFFC07009AF8A2 /* dummy.swift */,
 				BEEABC102EA626DA00903C45 /* MenuView.swift */,
 				BEEABC122EA6283E00903C45 /* FlavorView.swift */,
+				BEEABC2E2EA7840500903C45 /* BrowserView.swift */,
 			);
 			path = View_Practice01;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				BEEABC112EA626DA00903C45 /* MenuView.swift in Sources */,
 				56AF0BAB2AEF76EB009AF8A2 /* ViewModel.swift in Sources */,
 				56AF0BC92AEFFC07009AF8A2 /* dummy.swift in Sources */,
+				BEEABC2F2EA7840500903C45 /* BrowserView.swift in Sources */,
 				BEEABC132EA6283E00903C45 /* FlavorView.swift in Sources */,
 				56AF0B7D2AEEB368009AF8A2 /* View_Practice01App.swift in Sources */,
 				56AF0BBF2AEFB847009AF8A2 /* EmailView.swift in Sources */,
@@ -320,6 +324,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,6 +354,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
