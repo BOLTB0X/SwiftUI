@@ -2,21 +2,28 @@
 
 > Thread는 작업을 수행할 수 있는 프로세스를 수행할 수 있으므로 기본적으로 앱 안에 많은 Thread가 존재
 
-App을 구성하는 모든 코드는 main Thread 그 안에 특정 thread에 선언되어 수행되는 것
+App을 구성하는 모든 코드는 **main Thread** 그 안에 특정 **thread** 에 선언되어 수행되는 것
 
-dispatchQueue 를 통해서 코드들이 실행될 때 특별히 지정하지 않으면 Main Thread에서 작업이 진행 됌
+`dispatchQueue` 를 통해서 코드들이 실행될 때 특별히 지정하지 않으면 **Main Thread** 에서 작업이 진행 됌
 
-그렇다면 개발을 하다보면 코드가 많아질 것이고 그럼 Main Thread에서 많은 작업을 하게 될 것임 -> App의 속도와 같은 성능이 떨어짐
+- 그렇다면 개발을 하다보면 코드가 많아질 것이고 그럼 **Main Thread** 에서 많은 작업을 하게 될 것임 -> App의 속도와 같은 성능이 떨어짐
 
-그래서 URL 같은 다운로드 작업은 main이 아닌 background에서, Main Thread가 아닌 Background Thread에서 작업하는 것이 가장 이상적임
+- 그래서 URL 같은 다운로드 작업은 main이 아닌 **background** 에서, **Main Thread** 가 아닌 **Background Thread에서 작업하는 것이 가장 이상적**
+
+---
 
 ## Thread의 업데이트 과정
 
-1. Main Thread에서 시작
+1. **Main Thread** 에서 시작
+
 2. App 실행
-3. Background Thread로 이동
+
+3. **Background Thread** 로 이동
+
 4. 작업을 수행
-5. 수행한 작업을 업데이트하기 전에 Main Thread로 이동
+
+5. 수행한 작업
+
 6. 수행 작업 업데이트
 
 ```swift
@@ -42,11 +49,11 @@ class MainThreadViewModel: ObservableObject {
 }
 ```
 
-사용자가 앱을 스크롤했을 때 갑자기 속도가 늦어지거나 렉이 발생하면?
+- 사용자가 앱을 스크롤했을 때 갑자기 속도가 늦어지거나 렉이 발생하면?
 
-높은 확률로 Main Thread에서 너무 많은 프로세스가 진행 중이라는 것
+- 높은 확률로 **Main Thread** 에서 너무 많은 프로세스가 진행 중이라는 것
 
-이 것을 해결하기 위해서는 background Thread로 이동시켜야 함
+- 이 것을 해결하기 위해서는 **background Thread** 로 이동시켜야 함
 
 ```swift
 class BackgroundThreadViewModel: ObservableObject {
@@ -78,18 +85,17 @@ class BackgroundThreadViewModel: ObservableObject {
 
 UI를 이동할 때(스크롤할 때)는 여전히 Main Thread에 존재 -> **_UI에 영향을 미치는 모든 작업은 Main Thread에서 수행_**
 
-fetchData() 동작 방식
+`fetchData()` 동작 방식
 
-- Background Thread에서 데이터를 다운로드, 데이터를 처리하고 데이터를 이동
-  <br/>
+- **Background Thread** 에서 데이터를 다운로드, 데이터를 처리하고 데이터를 이동
+  
 - DB로 돌아가버릴 때 UI를 업데이트하는 작업을 수행
-  <br/>
-- Data Array 업데이트
-  <br/>
-- UI에 View를 업데이트
-  <br/>
-- Data Array를 업데이트하는 순간 마다 background Thread에 수행
-  <br/>
+  
+- Data `Array` 업데이트
+
+- UI에 `View`를 업데이트
+  
+- Data Array를 업데이트하는 순간 마다 **background Thread** 에 수행
 
 **_즉 Data Array를 업데이트하는 순간 마다 Main Thread에서 수행 되도록 수정_**
 
@@ -106,6 +112,8 @@ func fetchData() {
     }
 }
 ```
+
+---
 
 ## Thread 위치 확인
 
@@ -127,6 +135,8 @@ func fetchData() {
     }
 }
 ```
+
+---
 
 ## 참고
 
